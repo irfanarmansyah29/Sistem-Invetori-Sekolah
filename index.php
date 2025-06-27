@@ -301,13 +301,15 @@ $page = $_GET['page'] ?? 'dashboard';
             </div><br>
         </div>
 
-        <a href="index.php?page=dashboard" class="<?= $page == 'dashboard' ? 'active' : '' ?>">🏠 <span>Dashboard</span></a>
-        <a href="index.php?page=barang" class="<?= $page == 'barang' ? 'active' : '' ?>">📦 <span>Data Barang</span></a>
-        <a href="index.php?page=kategori" class="<?= $page == 'kategori' ? 'active' : '' ?>">📁 <span>Kategori</span></a>
-        <a href="index.php?page=lokasi" class="<?= $page == 'lokasi' ? 'active' : '' ?>">🏫 <span>Lokasi/Ruangan</span></a>
-        <a href="index.php?page=peminjaman" class="<?= $page == 'peminjaman' ? 'active' : '' ?>">📚 <span>Peminjaman</span></a>
-        <a href="index.php?page=laporan" class="<?= $page == 'laporan' ? 'active' : '' ?>">📊 <span>Laporan</span></a>
-        <a href="index.php?page=users" class="<?= $page == 'users' ? 'active' : '' ?>">👤 <span>Pengguna</span></a>
+        <a href="index.php?page=dashboard" class="<?= $page == 'dashboard' ? 'active' : '' ?>"> <span>Dashboard</span></a>
+        <a href="index.php?page=barang" class="<?= $page == 'barang' ? 'active' : '' ?>"> <span>Data Barang</span></a>
+        <a href="index.php?page=kategori" class="<?= $page == 'kategori' ? 'active' : '' ?>"> <span>Kategori</span></a>
+        <a href="index.php?page=lokasi" class="<?= $page == 'lokasi' ? 'active' : '' ?>"> <span>Lokasi/Ruangan</span></a>
+        <a href="index.php?page=peminjaman" class="<?= $page == 'peminjaman' ? 'active' : '' ?>"> <span>Peminjaman</span></a>
+        <a href="index.php?page=laporan_peminjaman" class="<?= $page == 'laporan_peminjaman' ? 'active' : '' ?>"> <span>Laporan Peminjaman</span></a>
+        <a href="index.php?page=laporan_barang_rusak" class="<?= $page == 'laporan_barang_rusak' ? 'active' : '' ?>"> <span>Laporan Barang Rusak</span></a>
+        <a href="index.php?page=riwayat" class="<?= $page == 'riwayat' ? 'active' : '' ?>"> <span>riwayat Stok Per Kategori</span></a>
+        <a href="index.php?page=users" class="<?= $page == 'users' ? 'active' : '' ?>"> <span>Pengguna</span></a>
         
 
     </div>
@@ -326,7 +328,9 @@ $page = $_GET['page'] ?? 'dashboard';
                 'lokasi' => 'lokasi.php',
                 'peminjaman' => 'peminjaman.php',
                 'pengembalian' => 'pengembalian.php',
-                'laporan' => 'laporan.php',
+                'laporan_peminjaman' => 'laporan_peminjaman.php',
+                'laporan_barang_rusak' => 'laporan_barang_rusak.php',
+                'riwayat' => 'riwayat_stok_perkategori.php',
                 'users' => 'users.php'
             ];
             if (isset($pages[$page])) {

@@ -187,8 +187,8 @@ if ($edit) {
   }
 
   .btn.gray {
-    background: #e2e8f0;
-    color: #1e293b;
+    background:#ef4444;
+    color:rgb(255, 255, 255);
   }
 
   table {

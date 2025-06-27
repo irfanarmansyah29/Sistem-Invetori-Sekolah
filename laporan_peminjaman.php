@@ -68,6 +68,7 @@ if ($tglMulai && $tglSelesai) {
           <th>Nama Peminjam</th>
           <th>Barang</th>
           <th>Tanggal Pinjam</th>
+          <th>Tanggal Kembali</th>
         </tr>
       </thead>
       <tbody>
@@ -82,6 +83,7 @@ if ($tglMulai && $tglSelesai) {
             <td><?= $d['nama_peminjam'] ?></td>
             <td><?= $d['nama_barang'] ?></td>
             <td><?= $d['tgl_pinjam'] ?></td>
+            <td><?=$d['tanggal_kembali'] ?> </td>
           </tr>
         <?php endwhile; ?>
       </tbody>
